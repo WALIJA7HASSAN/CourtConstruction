@@ -121,8 +121,12 @@ html{
   opacity: 0;
 }
 
-
-
+.home-content p{
+  font-weight: 300;
+}
+.home-content >p:nth-of-type(1){
+  font-weight: 500;
+}
 
 
 @media screen and (min-width:768px){
@@ -160,6 +164,10 @@ html{
 .basket-content > aside:nth-of-type(2),.netball-content > aside:nth-of-type(2),.safety-content > aside:nth-of-type(2){
   justify-self: center;
   gap: 0.3rem;
+}
+
+.home-content p{
+  font-weight: normal;
 }
 
   
