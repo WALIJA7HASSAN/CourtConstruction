@@ -180,5 +180,4 @@ html{
 
 .slider-button {
   left: var(--position);
-  padding-block: 1rem;
 }
