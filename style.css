@@ -125,7 +125,7 @@ html{
   font-weight: 350;
 }
 .home-content >p:nth-of-type(1),.prices-content ul,.prices-content p{
-  font-weight: 550;
+  font-weight: 600;
 }
 .prices-content span{
   font-weight: 350;
@@ -170,7 +170,7 @@ html{
 }
 
 .home-content p,.prices-content ul,.prices-content p,.prices-content span{
-  font-weight: normal;
+  font-weight: 500;
 }
 
   
