@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+html{
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+
+.fade-enter-active, .fade-leave-active {
+      transition: opacity 1s, transform 1s;
+    }
+    .fade-enter, .fade-leave-to {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+.home-content,.prices-content,.tennis-content,.basket-content,.netball-content,.safety-content{
+  color: #505559;
+  margin-block: 2rem;
+  /* letter-spacing: -0.5px; */
+  line-height: 1.8;
+  font-family: "Open Sans", sans-serif;
+}
+
+.home-content ul,.basket-content ul,.netball-content ul{
+  list-style: disc;
+  padding: 0 0.7rem 0 1.5rem;
+}
+
+.home-content ul ul{
+  list-style: circle;
+}
+
+.home-content strong,.prices-content strong,.basket-content strong, .netball-content strong,.safety-content strong{
+  font-weight: 700;
+}
+.prices-content ul{
+  list-style: disc;
+  padding: 0 0.7rem 0 2rem;
+}
+.prices-content h3,.tennis-content h3,.basket-content h3,.netball-content h3,.safety-content h3{
+  font-size: 20px;
+  color: #bf2628;
+}
+
+.prices-content aside aside{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tennis-content aside,.basket-content aside,.netball-content aside,.safety-content aside{
+  display:  grid;
+  gap: 1rem;
+}
+
+.tennis-content aside aside,.netball-content > aside:nth-of-type(2),.safety-content > aside:nth-of-type(2){
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-block: 1rem;
+  
+}
+.tennis-content img{
+  object-fit: cover;
+}
+
+.tennis-content > aside:first-of-type > aside:first-of-type{
+  display:  grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.3rem;
+  
+}
+
+.tennis-content > aside:first-of-type > aside:first-of-type img {
+    width: 100%;
+    height: 100%;
+    max-height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+
+.basket-content > aside:nth-of-type(2){
+  display:  grid;
+  grid-template-columns: 1fr 1fr;
+   gap: 0.3rem;
+}
+.basket-content > aside:nth-of-type(2) img{
+  width: 100%;
+    height: 100%;
+    max-height: 250px;
+    max-width: 100%;
+    object-fit: cover;
+}
+ .netball-content img,.safety-content img{
+  
+    height: 100%;
+    max-height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.basket-content,.netball-content,.safety-content{
+  display:  grid;
+  gap: 1rem;
+}
+#gallery-link {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.5s ease-in-out, opacity 0.7s ease-in;
+}
+
+#gallery-link.hide {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+
+
+
+
+@media screen and (min-width:768px){
+  .prices-content aside{
+    display: flex;
+    gap: 1rem;
+
+  }
+  .tennis-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .basket-content,.netball-content,.safety-content{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .basket-content > aside:nth-of-type(2) img,.netball-content > aside:nth-of-type(2) img{
+ 
+    max-height: 334px;
+    max-width: 176px;
+   
+
+}
+  .safety-content> aside:nth-of-type(2) img{
+ 
+    max-height: 274px;
+    max-width: 431px;
+   
+
+}
+.basket-content > aside:nth-of-type(1),.netball-content > aside:nth-of-type(1),.safety-content > aside:nth-of-type(1){
+  align-self: baseline;
+}
+.basket-content > aside:nth-of-type(2),.netball-content > aside:nth-of-type(2),.safety-content > aside:nth-of-type(2){
+  justify-self: center;
+  gap: 0.3rem;
+}
+
+  
+}
+
+/* gallery */
+#tennis-before, #netball-before {
+  width: var(--position);
+}
+
+.slider {
+  cursor: e-resize;
+}
+
+.slider-line {
+  left: var(--position);
+}
+
+.slider-button {
+  left: var(--position);
+  padding-block: 1rem;
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<!--  -->
+ <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+<!--  -->
+  <link rel="shortcut icon" href="./assets/FavconLogo.svg" type="image/x-icon">
+    <title>Equipment & Accessories for Your Court</title>
+</head>
+<body style="font-family: 'Open Sans', sans-serif;" id="equipmentTop" class="bg-cover bg-center bg-fixed bg-no-repeat bg-[url('./assets/mainBg.jpg')]">
+     <nav class="md:hidden sticky top-0 bg-white   transition-all duration-200 z-50">
+        <div class="text-right text-[20px] p-3 flex items-center justify-between flex-wrap">
+            <i id="menu-icon" class="bx bx-menu transition-all duration-200 cursor-pointer text-[#5A5A5A] text-4xl"></i>
+            <img id="nav-logo" src="./assets/NavLogo.png" class="h-[30px] w-[116px]" alt="logo">
+            <a href="#"><i id="nav-phone" class="bx bxs-phone text-[#5A5A5A] transition-all duration-200"></i></a>
+        </div>
+        <div id="menu" class="fixed top-[54px] left-0 right-0 bottom-0 flex flex-col justify-between overflow-hidden transition-transform duration-300 transform -translate-y-[120%] bg-white ">
+            <ul class="flex flex-col items-center justify-around px-4 py-2 flex-grow text-[16px] max-h-[70%] my-4">
+                <li class="w-fit text-[#646464] hover:text-[#018e49] relative group"><a href="index.html">Home</a>
+                    <span class="w-0 group-hover:w-full h-[2px] bg-[#018e49] absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+                </li>
+                <li class="w-fit group text-[#646464] hover:text-[#018e49] relative group"><a href="services.html">Services</a>
+                    <span class="w-0 group-hover:w-full h-[2px] bg-[#018e49] absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+                </li>
+                <li class="w-fit group text-[#646464] hover:text-[#018e49] relative group"><a href="prices.html">Prices</a>
+                    <span class="w-0 group-hover:w-full h-[2px] bg-[#018e49] absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+                </li>
+                <li class="w-fit group text-[#646464] hover:text-[#018e49] relative group"><a href="#">Maintenance</a>
+                    <span class="w-0 group-hover:w-full h-[2px] bg-[#018e49] absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+                </li>
+                <li class="w-fit group text-[#646464] hover:text-[#018e49] relative group"><a href="projects.html">Projects</a>
+                    <span class="w-0 group-hover:w-full h-[2px] bg-[#018e49] absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+                </li>
+                <li class="w-fit group text-[#018e49] relative group"><a href="equipment.html">Equipment</a>
+                    <span class="w-full h-[2px] bg-[#018e49] absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+                </li>
+                <li class="w-fit group text-[#646464] hover:text-[#018e49] relative group"><a href="contact.html">Contact Us</a>
+                    <span class="w-0 group-hover:w-full h-[2px] bg-[#018e49] absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+                </li>
+                <li class="w-fit group text-[#646464] hover:text-[#018e49] relative group"><a href="#">About Us</a>
+                    <span class="w-0 group-hover:w-full h-[2px] bg-[#018e49] absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+                </li>
+            </ul>
+            <div class="flex align-items-center justify-center mb-10">
+                <a href="#"><button class="bg-[#bf2628] text-white py-2 px-10 rounded-md hover:bg-[#9D1A1C] transition-all duration-200 text-[16px]">Get a Free Quote</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!--  -->
+    <nav  class=" hidden md:block sticky top-0 font- bg-white font-medium z-50">
+         <div class="text-right text-[20px] px-3 py-5 flex items-center justify-around  gap-10 ">
+       
+        <img  src="./assets/NavLogo.png" class="h-[52px] w-[200px]" alt="logo">
+         <ul class="flex flex-row gap-3 flex-wrap items-center justify-around  px-4 py-2 flex-grow   text-[15px] max-w-[1000px]">
+                <li class="w-fit text-[#018e49] hover:text-[#bf2628] "><a href="index.html">Home</a>
+                </li>
+                <li class="w-fit group   text-[#018e49] hover:text-[#bf2628] transition-all duration-200"><a href="services.html">Services</a>
+                </li>
+                <li class="w-fit group   text-[#018e49] hover:text-[#bf2628] transition-all duration-200"><a href="prices.html">Prices</a>
+                </li>
+                <li class="w-fit group  text-[#018e49] hover:text-[#bf2628] transition-all duration-200"><a href="#">Maintenance</a>
+                </li>
+                <li class="w-fit group  text-[#018e49] hover:text-[#bf2628] transition-all duration-200"><a href="projects.html">Projects</a>
+                </li>
+                <li class="w-fit group  text-[#bf2628] transition-all duration-200"><a href="equipment.html">Equipment</a>
+                </li>
+                <li class="w-fit group  text-[#018e49] hover:text-[#bf2628] transition-all duration-200"><a href="contact.html">Contact Us</a>
+                </li>
+                <li class="w-fit group  text-[#018e49] hover:text-[#bf2628] transition-all duration-200"><a href="#">About Us</a>
+                </li>
+               
+               
+            </ul>
+            <div class=" flex  align-items-center justify-center  items-center flex-shrink-0">
+                <a href="#"><button class="bg-[#bf2628] text-white py-2 px-8 hover:bg-[#9D1A1C] transition-all duration-200 rounded-none   text-[15px]">Get a Free Quote</button></a>
+            </div>
+    </div>
+    </nav>
+    <!-- end of nav -->
+
+    <section  class="md:px-8 md:py-4 bg-[#E7EBE9] pb-2 md:bg-transparent ">
+        <div class="bg-[#F8F9F8] md:bg-[#ffffffb3] p-3 py-6   flex flex-col gap-2   text-[15px] leading-6 max-w-[1200px] mx-auto font-medium md:p-10">
+            <h3 class="text-[35px] md:text-[50px]   leading-none">Court Equipment & Accessories</h3>
+        <hr class="border-2 mt-4 border-[#018e49]">
+        <p class="text-[#505559]   my-6">We sell many items to complement your new court. Please browse by sporting category and place your order by completing the form below.</p>
+        
+       
+        <a class="w-full text-white bg-[#018e49] px-2 py-6 rounded-md hover:bg-[#026C38] transition-all duration-200 text-center md:text-[17px] md:py-4" href="#tennis">Tennis Court Equipment</a>
+        <a class="w-full text-white bg-[#bf2628] px-2 py-6 rounded-md hover:bg-[#9D1A1C] transition-all duration-200 text-center md:text-[17px] md:py-4" href="#basket">Basketball Court Equipment</a>
+        <a class="w-full text-white bg-[#018e49] px-2 py-6 rounded-md hover:bg-[#026C38] transition-all duration-200 text-center md:text-[17px] md:py-4" href="#netball">Netball Court Equipment</a>
+        <a class="w-full text-white bg-[#bf2628] px-2 py-6 rounded-md hover:bg-[#9D1A1C] transition-all duration-200 text-center md:text-[17px] md:py-4" href="#volleyball">Volleyball Court Equipment</a>
+        <a class="w-full text-white bg-[#018e49] px-2 py-6 rounded-md hover:bg-[#026C38] transition-all duration-200 text-center md:text-[17px] md:py-4" href="#badminton">Badminton Court Equipment</a>
+        <a class="w-full text-white bg-[#bf2628] px-2 py-6 rounded-md hover:bg-[#9D1A1C] transition-all duration-200 text-center md:text-[17px] md:py-4" href="#safetyPadding">Safety Padding</a>
+        </div>
+    </section>
+    <!-- Tennis Court Equipment -->
+      <section id="tennis" class="scroll-mt-20 md:px-8 md:py-4 bg-[#E7EBE9] pb-2 md:bg-transparent ">
+        <div class="bg-[#F8F9F8] md:bg-[#ffffffb3] p-3  py-6   flex flex-col gap-2   text-[15px] leading-6 max-w-[1200px] mx-auto font-medium md:p-10">
+            <h3 class="text-[28px] md:text-[35px]   leading-none">Tennis Court Equipment</h3>
+        <hr class="border-2 mt-4 border-[#018e49]">
+
+        <aside class="tennis-content">
+            <aside>
+                <h3>Tennis Posts</h3>
+                <p>Deluxe model posts are used in many world class tournaments. Posts are high tensile galvanised SHS steel. The precision mechanism will give years of trouble-free performance.</p>
+                <p>Budget model posts are ideal for clubs, schools and for private courts. Posts are made from heavy duty galvanised powder coated steel.</p>
+                <aside>
+                    <img src="./assets/tennispost1.jpg" alt="">
+                    <img src="./assets/tennispost2.jpg" alt="">
+                    <img src="./assets/tennispost3.jpg" alt="">
+                </aside>
+                <h3>Umpire Chair & Canopy</h3>
+                <p>Powder coated galvanized steel construction with fabric cover.</p>
+                <aside>
+                    <img src="./assets/tennisumpire.jpg" alt="">
+                </aside>
+            </aside>
+            <aside>
+                <h3>Mobile Tennis System</h3>
+                <p>T-Base frame is totally transportable on five (5) lockable non-marking rubber wheels. The frame can easily be wheeled away when not in use. Great for both indoor and outdoor applications.</p>
+                <aside>
+                    <img src="./assets/mobiletennis.jpg" alt="">
+                </aside>
+                <h3>Aussie Clean Sweep</h3>
+                <p>Clean and groom your tennis court in under 10 minutes!!</p>
+                <p>With the 8-foot (2m) Aussie Clean Sweep and very little effort - you can groom your tennis court to a perfect finish and at the same time remove leaves, pine needles, sticks, stones in fact just about any foreign debris in a matter of minutes. It is suitable for all court surfaces such as Synthetic Grass, Red Porous, Clay, Asphalt, Fast Dry, Grass, Acrylic/Cushioned Rubber, Plexi Pave, Loam etc.</p>
+                <aside>
+                    <img src="./assets/cleensweep.jpg" alt="">
+                </aside>
+            </aside>
+        </aside>
+
+        
+        
+       
+        <div class="hidden md:flex justify-center">
+            <a href="#equipmentTop">
+                <img src="./assets/arrow.svg" class="h-[50px] w-[50px]" alt="">
+            </a>
+        </div>
+        
+        <a class="w-full flex justify-center " href="contact.html"><button class="text-white bg-[#018e49] px-8 py-2 rounded-md hover:bg-[#026C38] transition-all duration-200 w-full sm:max-w-[280px]  ">Enquire Today</button></a>
+        
+        </div>
+    </section>
+    <!-- Basketball Court Equipment -->
+      <section id="basket" class=" scroll-mt-20 md:px-8 md:py-4 bg-[#E7EBE9] pb-2 md:bg-transparent ">
+        <div class="bg-[#F8F9F8] md:bg-[#ffffffb3] p-3  py-6   flex flex-col gap-2   text-[15px] leading-6 max-w-[1200px] mx-auto font-medium md:p-10">
+            <h3 class="text-[28px] md:text-[35px]   leading-none">Basketball Court Equipment</h3>
+        <hr class="border-2 mt-4 border-[#018e49]">
+
+        <aside class="basket-content">
+            <aside>
+                <h3>Basketball Towers</h3>
+                <strong>A range of towers, backboards, safety padding, rings and nets are available suitable for club, school, council and residential courts:</strong>
+                <ul>
+                    <li>Manufactured from a range materials.</li>
+                    <li>All outside borders and ring lines are marked to official measurements.</li>
+                    <li>Polycarbonate backboards are available on request.</li>
+                    <li>Half-size fibreglass backboards also available</li>
+                </ul>
+            </aside>
+            <aside>
+                <img src="./assets/basketball1.jpg" alt="">
+                <img src="./assets/basketball2.jpg" alt="">
+            </aside>
+        </aside>
+
+        
+        
+       
+        <div class="hidden md:flex justify-center">
+            <a href="#equipmentTop">
+                <img src="./assets/arrow.svg" class="h-[50px] w-[50px]" alt="">
+            </a>
+        </div>
+        
+        <a class="w-full flex justify-center " href="contact.html"><button class="text-white bg-[#018e49] px-8 py-2 rounded-md hover:bg-[#026C38] transition-all duration-200 w-full sm:max-w-[280px]  ">Enquire Today</button></a>
+        
+        </div>
+    </section>
+    <!-- Netball Court Equipment -->
+      <section id="netball" class="scroll-mt-20 md:px-8 md:py-4 bg-[#E7EBE9] pb-2 md:bg-transparent ">
+        <div class="bg-[#F8F9F8] md:bg-[#ffffffb3] p-3  py-6   flex flex-col gap-2   text-[15px] leading-6 max-w-[1200px] mx-auto font-medium md:p-10">
+            <h3 class="text-[28px] md:text-[35px]   leading-none">Netball Court Equipment</h3>
+        <hr class="border-2 mt-4 border-[#018e49]">
+
+        <aside class="netball-content">
+            <aside>
+                <h3>Netball Posts</h3>
+                <strong>A range of netball posts are available:</strong>
+                <ul>
+                    <li>Indoor or outdoor.</li>
+                    <li>Combination with basketball and portable.</li>
+                    <li>Rings, safety padding and nets to suit.</li>
+                    
+                </ul>
+            </aside>
+            <aside>
+                <img src="./assets/netball.jpg" alt="">
+            </aside>
+        </aside>
+
+        
+        
+       
+        <div class="hidden md:flex justify-center">
+            <a href="#equipmentTop">
+                <img src="./assets/arrow.svg" class="h-[50px] w-[50px]" alt="">
+            </a>
+        </div>
+        
+        <a class="w-full flex justify-center " href="contact.html"><button class="text-white bg-[#018e49] px-8 py-2 rounded-md hover:bg-[#026C38] transition-all duration-200 w-full sm:max-w-[280px]  ">Enquire Today</button></a>
+        
+        </div>
+    </section>
+
+     <!-- Volleyball Court Equipment -->
+      <section id="volleyball" class="scroll-mt-20 md:px-8 md:py-4 bg-[#E7EBE9] pb-2 md:bg-transparent ">
+        <div class="bg-[#F8F9F8] md:bg-[#ffffffb3] p-3  py-6   flex flex-col gap-2   text-[15px] leading-6 max-w-[1200px] mx-auto font-medium md:p-10">
+            <h3 class="text-[28px] md:text-[35px]   leading-none">Volleyball Court Equipment</h3>
+        <hr class="border-2 mt-4 border-[#018e49]">
+
+        <aside class="basket-content">
+            <aside>
+                <h3>Volleyball Net Posts</h3>
+                <strong>A range of volleyball netposts are available:</strong>
+                <ul>
+                    <li>Indoor or outdoor.</li>
+                    <li>Combination with tennis.</li>
+                    <li>Nets and safety padding to suit.</li>
+                </ul>
+            </aside>
+            <aside>
+                <img src="./assets/volleyball-net1.jpg" alt="">
+                <img src="./assets/volleyball-net2.jpg" alt="">
+            </aside>
+        </aside>
+
+        
+        
+       
+        <div class="hidden md:flex justify-center">
+            <a href="#equipmentTop">
+                <img src="./assets/arrow.svg" class="h-[50px] w-[50px]" alt="">
+            </a>
+        </div>
+        
+        <a class="w-full flex justify-center " href="contact.html"><button class="text-white bg-[#018e49] px-8 py-2 rounded-md hover:bg-[#026C38] transition-all duration-200 w-full sm:max-w-[280px]  ">Enquire Today</button></a>
+        
+        </div>
+    </section>
+
+    <!--  -->
+     <!-- Badminton Court Equipment -->
+      <section id="badminton" class="scroll-mt-20 md:px-8 md:py-4 bg-[#E7EBE9] pb-2 md:bg-transparent ">
+        <div class="bg-[#F8F9F8] md:bg-[#ffffffb3] p-3  py-6   flex flex-col gap-2   text-[15px] leading-6 max-w-[1200px] mx-auto font-medium md:p-10">
+            <h3 class="text-[28px] md:text-[35px]   leading-none">Badminton Court Equipment</h3>
+        <hr class="border-2 mt-4 border-[#018e49]">
+
+        <aside class="netball-content">
+            <aside>
+                <h3>Badminton Net Posts</h3>
+                <strong>A range of badminton posts and nets are available:</strong>
+                <ul>
+                    <li>Indoor or outdoor.</li>
+                    <li>Combination options.</li>
+                    
+                </ul>
+            </aside>
+            <aside>
+            </aside>
+        </aside>
+
+        
+        
+       
+        <div class="hidden md:flex justify-center">
+            <a href="#equipmentTop">
+                <img src="./assets/arrow.svg" class="h-[50px] w-[50px]" alt="">
+            </a>
+        </div>
+        
+        <a class="w-full flex justify-center " href="contact.html"><button class="text-white bg-[#018e49] px-8 py-2 rounded-md hover:bg-[#026C38] transition-all duration-200 w-full sm:max-w-[280px]  ">Enquire Today</button></a>
+        
+        </div>
+    </section>
+     <!-- Safety Padding -->
+      <section id="safetyPadding" class="scroll-mt-20 md:px-8 md:py-4 bg-[#E7EBE9] pb-2 md:bg-transparent ">
+        <div class="bg-[#F8F9F8] md:bg-[#ffffffb3] p-3  py-6   flex flex-col gap-2   text-[15px] leading-6 max-w-[1200px] mx-auto font-medium md:p-10">
+            <h3 class="text-[28px] md:text-[35px]   leading-none">Safety Padding</h3>
+        <hr class="border-2 mt-4 border-[#018e49]">
+
+        <aside class="safety-content">
+            <aside>
+                <h3>Safety Padding for all courts</h3>
+                <strong>A range of safety padding is available for most sports.</strong>
+            </aside>
+            <aside>
+                <img src="./assets/safetyPadding.png" alt="">
+            </aside>
+        </aside>
+
+        
+        
+       
+        <div class="hidden md:flex justify-center">
+            <a href="#equipmentTop">
+                <img src="./assets/arrow.svg" class="h-[50px] w-[50px]" alt="">
+            </a>
+        </div>
+        
+        <a class="w-full flex justify-center " href="contact.html"><button class="text-white bg-[#018e49] px-8 py-2 rounded-md hover:bg-[#026C38] transition-all duration-200 w-full sm:max-w-[280px]  ">Enquire Today</button></a>
+        
+        </div>
+    </section>
+
+
+ 
+
+    <!-- footer -->
+     <footer class="bg-[#737574] px-5 py-6 md:py-10 md:px-8  flex flex-col gap-8 md:gap-2 items-center md:bg-opacity-50 md:bg-black ">
+        <div class="flex flex-col flex-wrap md:flex-row gap-10 justify-around max-w-[1200px]">
+            <div class="flex flex-col max-w-[360px] md:flex-row md:items-start gap-4 items-center text-center">
+            <div class="h-[42px] w-[42px] md:h-[30px] md:w-[30px]  ">
+                <img src="./assets/footerLogo1.svg" alt="">
+            </div>
+           <div class="">
+             <h5 class="text-white text-[20px] mb-4">Call Us Today</h6>
+            <p class="text-[#CACBCA] text-[15px]">Local Call <a class="text-white font-bold" href="tel:+1300 773 576">1300 773 576</a></p>
+           </div>
+        </div>
+        <div class="flex flex-col gap-4  items-center text-center max-w-[360px] md:gap-0">
+            <div class="flex flex-col items-center gap-4 md:flex-row md:gap-8">
+                <div class="h-[42px] w-[42px] md:h-[30px] md:w-[30px] ">
+                <img src="./assets/footerLogo2.svg" alt="">
+            </div>
+            <h5 class="text-white text-[20px] mb-4">Service Areas</h6></div>
+           <div >
+            <p class="text-[#CACBCA] text-[15px] font-bold">Brisbane, Toowoomba and all Western Queensland regional areas</p>
+           </div>
+        </div>
+        <div class="flex flex-col gap-4 items-center text-center md:flex-row md:items-start max-w-[360px]">
+            <div class="h-[42px] w-[42px]  md:h-[30px] md:w-[30px]">
+                <img src="./assets/footerLogo3.svg" alt="">
+            </div>
+           <div >
+             <h5 class="text-white text-[20px] mb-4">Postal Address</h6>
+            <p class="text-[#CACBCA] text-[15px] font-bold">PO Box 1782 <br> Toowoomba QLD 4350</p>
+           </div>
+        </div>
+        </div>
+        <p class="text-[15px] text-center font-bold text-[#cacbca] px-3 md:mt-6">
+            QBCC Licence No: <span class="font-normal">1249859</span> | <a class="text-white" href="#">Privacy Policy</a> <span class="text-white">|</span> 
+            <a class="text-white" href="#">Developed by Indigo Web</a> 
+        </p>
+        <div class="flex flex-wrap text-white text-[13px] gap-1 justify-center md:mb-1">
+            <p>&copy; 2024 </p>
+            <p>Darling Downs Court Constructions</p>
+        </div>
+     </footer>
+  <span id="backToTopBtn" class="bg-[#04040468]  px-1 border border-white inline-flex cursor-pointer fixed bottom-4 right-4 hidden">
+  <a href="#"><img src="./assets/faq-icon.svg" class="w-4 rotate-180" alt="Back to top"></a>
+</span>
+    <script src="./app.js"></script>
+     <script>document.addEventListener('DOMContentLoaded', () => {
+  const backToTopBtn = document.getElementById('backToTopBtn');
+
+  const toggleBackToTopBtn = () => {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const threshold = documentHeight - 100; // Adjust this value as needed
+
+    if (window.innerWidth < 768) {
+      // Show on smaller screens if near bottom
+      if (scrollPosition >= threshold) {
+        backToTopBtn.classList.remove('hidden');
+      } else {
+        backToTopBtn.classList.add('hidden');
+      }
+    } else {
+      // Hide on larger screens by default
+      backToTopBtn.classList.add('hidden');
+    }
+  };
+
+  const scrollToTop = (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  window.addEventListener('scroll', toggleBackToTopBtn);
+  window.addEventListener('resize', toggleBackToTopBtn);
+  backToTopBtn.addEventListener('click', scrollToTop);
+
+  // Initial check in case the page is loaded near the bottom
+  toggleBackToTopBtn();
+});
+</script>
+</body>
+</html>
