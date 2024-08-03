@@ -169,8 +169,8 @@ html{
   gap: 0.3rem;
 }
 
-.home-content p,.prices-content ul,.prices-content p,.prices-content span{
-  font-weight: 500;
+.home-content p,.prices-content ul,.prices-content p,.prices-content span,.home-content >p:nth-of-type(1){
+  font-weight: 470;
 }
 
   
