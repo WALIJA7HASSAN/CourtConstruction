@@ -8,7 +8,8 @@
 
 html{
   scroll-behavior: smooth;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Tahoma', Geneva, sans-serif;
+
 }
 
 .fade-enter-active, .fade-leave-active {
@@ -24,7 +25,7 @@ html{
   margin-block: 2rem;
   /* letter-spacing: -0.5px; */
   line-height: 1.8;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
 }
 
 .home-content ul,.basket-content ul,.netball-content ul{
@@ -32,12 +33,18 @@ html{
   padding: 0 0.7rem 0 1.5rem;
 }
 
+.home-content  ul {
+  padding-left:  2.3rem;
+}
+
+
+
 .home-content ul ul{
   list-style: circle;
 }
 
 .home-content strong,.prices-content strong,.basket-content strong, .netball-content strong,.safety-content strong{
-  font-weight: 750;
+  font-weight: 700;
 }
 .prices-content ul{
   list-style: disc;
@@ -122,13 +129,13 @@ html{
 }
 
 .home-content p{
-  font-weight: 350;
+  font-weight: 300;
 }
 .home-content >p:nth-of-type(1),.prices-content ul,.prices-content p{
-  font-weight: 600;
+  font-weight: 520;
 }
 .prices-content span{
-  font-weight: 350;
+  font-weight: 300;
 }
 
 
